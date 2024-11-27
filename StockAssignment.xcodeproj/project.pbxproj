@@ -30,24 +30,74 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		85FA16192CF373D300F15751 /* Exceptions for "StockAssignment" folder in "StockAssignment" target */ = {
+		85FA18182CF6633800F15751 /* Exceptions for "StockAssignment" folder in "StockAssignment" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				"/Localized: LaunchScreen.storyboard",
+				AppDelegate.swift,
+				Assets.xcassets,
+				HomeController.swift,
+				Network/APIClient.swift,
+				Network/Constants.swift,
+				Orders/OrderInteractor.swift,
+				Orders/OrderPresenter.swift,
+				Orders/OrderProtocol.swift,
+				Orders/OrderRouter.swift,
+				Orders/OrderViewController.swift,
+				Portfolio/bottomSheet/PriceBreakdownSheet.swift,
+				Portfolio/Entities/StockDataModel.swift,
+				Portfolio/PortfolioInteractor.swift,
+				Portfolio/PortfolioPresenter.swift,
+				Portfolio/PortfolioProtocol.swift,
+				Portfolio/PortfolioRouter.swift,
+				Portfolio/PortfolioViewController.swift,
+				Portfolio/TableviewCell/PortfolioTableViewCell.swift,
+				SceneDelegate.swift,
+				Utilities/Extensions.swift,
+				watchlist/WatchlistInteractor.swift,
+				watchlist/WatchlistPresenter.swift,
+				watchlist/WatchlistProtocol.swift,
+				watchlist/WatchlistRouter.swift,
+				watchlist/WatchlistViewController.swift,
 			);
 			target = 85FA15F02CF373D100F15751 /* StockAssignment */;
+		};
+		85FA18192CF6633800F15751 /* Exceptions for "StockAssignment" folder in "StockAssignmentTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: LaunchScreen.storyboard",
+				AppDelegate.swift,
+				Assets.xcassets,
+				HomeController.swift,
+				Info.plist,
+				Network/APIClient.swift,
+				Network/Constants.swift,
+				Orders/OrderInteractor.swift,
+				Orders/OrderPresenter.swift,
+				Orders/OrderProtocol.swift,
+				Orders/OrderRouter.swift,
+				Orders/OrderViewController.swift,
+				Portfolio/bottomSheet/PriceBreakdownSheet.swift,
+				Portfolio/Entities/StockDataModel.swift,
+				Portfolio/PortfolioInteractor.swift,
+				Portfolio/PortfolioPresenter.swift,
+				Portfolio/PortfolioProtocol.swift,
+				Portfolio/PortfolioRouter.swift,
+				Portfolio/PortfolioViewController.swift,
+				Portfolio/TableviewCell/PortfolioTableViewCell.swift,
+				SceneDelegate.swift,
+				Utilities/Extensions.swift,
+				watchlist/WatchlistInteractor.swift,
+				watchlist/WatchlistPresenter.swift,
+				watchlist/WatchlistProtocol.swift,
+				watchlist/WatchlistRouter.swift,
+				watchlist/WatchlistViewController.swift,
+			);
+			target = 85FA16062CF373D300F15751 /* StockAssignmentTests */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		85FA15F32CF373D100F15751 /* StockAssignment */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				85FA16192CF373D300F15751 /* Exceptions for "StockAssignment" folder in "StockAssignment" target */,
-			);
-			path = StockAssignment;
-			sourceTree = "<group>";
-		};
 		85FA160A2CF373D300F15751 /* StockAssignmentTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = StockAssignmentTests;
@@ -56,6 +106,15 @@
 		85FA16142CF373D300F15751 /* StockAssignmentUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = StockAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		85FA18012CF6633700F15751 /* StockAssignment */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				85FA18182CF6633800F15751 /* Exceptions for "StockAssignment" folder in "StockAssignment" target */,
+				85FA18192CF6633800F15751 /* Exceptions for "StockAssignment" folder in "StockAssignmentTests" target */,
+			);
+			path = StockAssignment;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -88,7 +147,7 @@
 		85FA15E82CF373D100F15751 = {
 			isa = PBXGroup;
 			children = (
-				85FA15F32CF373D100F15751 /* StockAssignment */,
+				85FA18012CF6633700F15751 /* StockAssignment */,
 				85FA160A2CF373D300F15751 /* StockAssignmentTests */,
 				85FA16142CF373D300F15751 /* StockAssignmentUITests */,
 				85FA15F22CF373D100F15751 /* Products */,
@@ -120,9 +179,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				85FA15F32CF373D100F15751 /* StockAssignment */,
-			);
 			name = StockAssignment;
 			packageProductDependencies = (
 			);
@@ -145,6 +201,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				85FA160A2CF373D300F15751 /* StockAssignmentTests */,
+				85FA18012CF6633700F15751 /* StockAssignment */,
 			);
 			name = StockAssignmentTests;
 			packageProductDependencies = (
@@ -294,7 +351,6 @@
 				INFOPLIST_FILE = StockAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +378,6 @@
 				INFOPLIST_FILE = StockAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
